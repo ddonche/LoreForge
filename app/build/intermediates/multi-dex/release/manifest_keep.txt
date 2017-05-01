@@ -1,0 +1,31 @@
+-keep class com.totaldanarchy.dan.loreforgewriterresources.MainActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.CharNamesActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.ConflictsActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.MotivesActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.CityNamesActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.StreetsActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.TavernsActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.FantasyNamesActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.PlotsActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.WikiActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.QuotesActivity { <init>(); }
+-keep class com.totaldanarchy.dan.loreforgewriterresources.CharInfoActivity { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.google.android.gms.ads.AdActivity { <init>(); }
+-keep class com.google.android.gms.ads.purchase.InAppPurchaseActivity { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdInternalReceiver { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdService { <init>(); }
+-keep public class * extends android.app.backup.BackupAgent {
+    <init>();
+}
+-keep public class * extends java.lang.annotation.Annotation {
+    *;
+}
+-keep class com.android.tools.fd.** {
+    *;
+}
+-dontnote com.android.tools.fd.**,android.support.multidex.MultiDexExtractor

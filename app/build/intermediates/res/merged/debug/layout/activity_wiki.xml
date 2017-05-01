@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:scrollbars="horizontal">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#424242">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/wiki_instructions"
+        android:id="@+id/instructionsWikiView"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:typeface="serif"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="6dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wikiButton"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/lficon"
+        android:fillColor="@android:color/white"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:background="@android:color/transparent"
+        android:layout_marginBottom="16sp"
+        android:layout_marginTop="6sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wikiTextLinearLayout" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/wiki_text"
+            android:id="@+id/wikiText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wikiLinearLayout1"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/apocalypseButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/apocalypse"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fantasyButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/fantasy"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/horrorButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/horror"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLinearLayout1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/apocalypse_text"
+            android:id="@+id/apocalypseText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/fantasy_text"
+            android:id="@+id/fantasyText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/horror_text"
+            android:id="@+id/horrorText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wikiLinearLayout2"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/militaryButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/military"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mysteryButton"
+            android:layout_above="@+id/adView"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/mystery"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/paranormalButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/paranormal"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLinearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/military_text"
+            android:id="@+id/militaryText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/mystery_text"
+            android:id="@+id/mysteryText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/paranormal_text"
+            android:id="@+id/paranormalText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_margin="6dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/wikiLinearLayout3"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/romanceButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/romance"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/scifiButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/scifi"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/westernButton"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/western"
+            android:fillColor="@android:color/white"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:background="@android:color/transparent"
+            android:layout_weight="1"
+            android:layout_margin="6dp"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textLinearLayout3" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/romance_text"
+            android:id="@+id/romanceText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/scifi_text"
+            android:id="@+id/scifiText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/western_text"
+            android:id="@+id/westernText"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fff"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+</LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
